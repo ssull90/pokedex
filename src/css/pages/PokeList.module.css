@@ -1,0 +1,121 @@
+.SearchBar {
+    border: 1px solid gray;
+    font-size: 16px;
+    padding: 6px 8px;
+    border-radius: 5px;
+    width: 200px;
+    font-family: 'Comic Sans MS';
+}
+
+.FilterDiv {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid gray;
+}
+
+.FilterText {
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+.TextAndSelect {
+    flex-shrink: 0;
+    flex-basis: 400px;
+    min-width: 300px;
+    flex: 1;
+    display: flex;
+}
+
+.DropDown {
+    width: 200px;
+    display: inline-block;
+}
+
+.DropDown div {
+    border-color: gray;
+}
+
+.ListItem {
+    background-color: white;
+    display: flex;
+    border-bottom: 2px solid gray;
+}
+
+.ListItem:hover {
+    background-color: rgb(155, 155, 155);
+}
+
+.NumberText {
+    padding: 15px 0 0 10px;
+    font-size: 50px;
+    flex: 1;
+    min-width: 100px;
+}
+
+.ImageContainer {
+    flex: 1;
+    min-width: 150px;
+}
+
+.PokemonImage {
+    height: 100px;
+}
+
+.Details {
+    padding-left: 50px;
+    flex: 9;
+}
+
+.NameText {
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+.TypeWeakness {
+    padding-top: 5px;
+    display: flex;
+}
+
+.TypeText {
+    flex: 1;
+}
+
+.WeaknessText {
+    flex: 1;
+}
+
+.NoneFound {
+    text-align: center;
+    padding-top: 50px;
+}
+
+@media only screen and (max-width: 719px) { 
+    .ImageContainer {
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 500px) { 
+    .NumberText {
+        padding-top: 40px;
+        font-size: 25px;
+        min-width: 50px;
+    }
+    .Details {
+        padding-left: 20px;
+        flex: 3;
+        padding-right: 15px;
+    }
+    .NameText {
+        font-size: 20px;
+    }
+    .TypeText {
+        font-size: 14px;
+    }
+    
+    .WeaknessText {
+        font-size: 14px;
+    }
+  }

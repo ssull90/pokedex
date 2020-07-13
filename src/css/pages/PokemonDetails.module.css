@@ -1,0 +1,70 @@
+.LeftArrow {
+    padding: 10px 0 0 20px;
+    font-size: 40px;
+    height: 35px;
+    width: 30px;
+}
+
+.LeftArrow::after {
+    display: block;
+    content: ' \279C';
+    transform: rotate(180deg);
+    padding-right: 5px;
+}
+
+.Title {
+    text-align: center;
+}
+
+.PokemonName {
+    font-size: 40px;
+}
+
+.DetailsDiv {
+    padding: 30px 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid gray;
+}
+
+.PhotoDiv {
+    /* background-color: green; */
+    flex: 1;
+    text-align: center;
+    /* padding-left: 30px; */
+}
+
+.PokemonImage {
+    width: 200px;
+    min-width: 200px;
+}
+
+.InfoDiv {
+    flex: 2;
+    min-width: 200px;
+}
+
+.InfoText{
+    padding: 20px 0 0 20px;
+}
+
+.NextPrevDiv {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.NextPrev {
+    text-align: center;
+    padding-top: 35px;
+    flex: 1;
+    min-width: 200px;
+}
+
+@media only screen and (max-width: 540px) {
+    .PhotoDiv {
+        text-align: center;
+    }
+    .InfoDiv {
+        text-align: center;
+    }
+}
